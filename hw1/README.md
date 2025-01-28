@@ -88,7 +88,7 @@ docker run -it \
 
 Then, connect to Postgres and upload data in Jupyter notebook:
 
-conn_engine.ipynb
+[conn_engine.ipynb](hw1/conn_engine.ipynb)
 
 SQL Query to retrieve the number of trips up to 1 mile:
 
