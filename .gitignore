@@ -37,3 +37,6 @@ override.tf.json
 terraform.rc
 
 *.json
+
+# Ignore parquet file - avoid uploading large data files
+*.parquet
