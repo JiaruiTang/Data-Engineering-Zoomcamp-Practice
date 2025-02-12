@@ -178,3 +178,7 @@ While clustering can improve query performance in BigQuery, it is not always the
 ## Question 9
 
 > Write a SELECT count(*) query FROM the materialized table you created. How many bytes does it estimate will be read? Why?
+
+The estimated bytes is zero.
+
+Explanation: BigQuery automatically precomputes and caches metadata which includes the total number of rows in the dataset. Therefore, when running SELECT count(*) query from the regular/materialized table, **BigQuery retrieves the precomputed row count instead of scanning the entire table**. In this way, BigQuery efficiently prevents unnecessary data scans, resulting in 0 bytes processed.
