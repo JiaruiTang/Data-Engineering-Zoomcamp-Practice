@@ -40,3 +40,6 @@ terraform.rc
 
 # Ignore parquet file - avoid uploading large data files
 *.parquet
+
+# Ignore virtual environment folder
+**/venv/*
